@@ -3,12 +3,8 @@
 #include <math.h>  // Pour M_PI
 
 int main() {
-    double rayon;
+    double rayon = 40;
     double aire, perimetre;
-
-    // Demander à l'utilisateur d'entrer le rayon
-    printf("Entrez le rayon du cercle : ");
-    scanf("%lf", &rayon);
 
     // Calcul de l'aire et du périmètre
     aire = M_PI * rayon * rayon;
