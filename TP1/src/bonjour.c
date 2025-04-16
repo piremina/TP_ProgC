@@ -1,3 +1,3 @@
-int main {
-printf("Bonjour à tous") 
+int main () {
+printf("Bonjour à tous"); 
 }
