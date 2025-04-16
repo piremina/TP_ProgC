@@ -16,18 +16,12 @@ int main() {
             printf("%d * %d = %d\n", num1, num2, num1 * num2);
             break;
         case '/':
-            if (num2 != 0) {
-                printf("%d / %d = %d\n", num1, num2, num1 / num2);
-            } else {
-                printf("Erreur : Division par zéro impossible.\n");
+            printf("%d / %d = %d\n", num1, num2, num1 / num2);
             }
             break;
         case '%':
-            if (num2 != 0) {
-                printf("%d %% %d = %d\n", num1, num2, num1 % num2);
-            } else {
-                printf("Erreur : Division par zéro impossible.\n");
-            }
+            printf("%d %% %d = %d\n", num1, num2, num1 % num2);
+            } 
             break;
         case '&':
             printf("%d & %d = %d\n", num1, num2, num1 & num2);
