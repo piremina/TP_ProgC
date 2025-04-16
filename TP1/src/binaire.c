@@ -2,18 +2,25 @@
 
 int main() {
     int n = 4096;
-    printf("Décimal : %d\tBinaire : ", n);
+    int binaire[32];
+    int i = 0;
 
-    int bitTrouve = 0;
-
-    for (int i = 31; i >= 0; i--) {
-        int bit = (n >> i) & 1;
-        if (bit || bitTrouve || i == 0) {
-            bitTrouve = 1;
-            printf("%d", bit);
-        }
+    if (n == 0) {
+        printf("Décimal : 0\tBinaire : 0\n");
+        return 0;
     }
 
+    while (n > 0) {
+        binaire[i] = n % 2;
+        n = n / 2;
+        i++;
+    }
+
+    printf("Binaire : ");
+    for (int j = i - 1; j >= 0; j--) {
+        printf("%d", binaire[j]);
+    }
     printf("\n");
+
     return 0;
 }
