@@ -1,8 +1,7 @@
-// boucles.c
 #include <stdio.h>
 
 int main() {
-    int compteur = 5; // Doit être < 10
+    int compteur = 5; 
 
     if (compteur >= 10) {
         printf("Le compteur doit être inférieur à 10.\n");
