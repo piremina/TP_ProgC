@@ -3,7 +3,7 @@
 int main() {
     int num1=5;
     int num2=4;   
-    char op='+';          
+    char op='&';          
 
     switch (op) {
         case '+':
