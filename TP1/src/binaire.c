@@ -18,9 +18,9 @@ void afficherBinaire(int nombre) {
 int main() {
     int valeur=0;
 
-    for (int i = 0; i < taille; i++) {
-        printf("Décimal : %d\tBinaire : ", valeurs[i]);
-        afficherBinaire(valeurs[i]);
+    for (int i = 0; i < 50; i++) {
+        printf("Décimal : %d\tBinaire : ", valeur[i]);
+        afficherBinaire(valeur[i]);
     }
 
     return 0;
