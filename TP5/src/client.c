@@ -82,7 +82,12 @@ int main()
   memset(&server_addr, 0, sizeof(server_addr));
   server_addr.sin_family = AF_INET;
   server_addr.sin_port = htons(PORT);
-  server_addr.sin_addr.s_addr = 10.0.63.6;
+
+  // Remplacement de INADDR_ANY par l’adresse IP spécifique
+  if (inet_pton(AF_INET, "10.0.63.6", &server_addr.sin_addr) <= 0) {
+  perror("Adresse IP invalide");
+  exit(EXIT_FAILURE);
+  }
    
   // demande de connection au serveur
   int connect_status = connect(socketfd, (struct sockaddr *)&server_addr, sizeof(server_addr));
